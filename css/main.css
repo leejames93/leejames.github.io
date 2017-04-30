@@ -19,6 +19,12 @@ body {
 
 /* Section 1
 		 * --------------------------------------- */
+
+@-moz-keyframes reveal-banner { 0% { opacity: 0; } 100% { opacity: 1; } }
+@-webkit-keyframes reveal-banner { 0% { opacity: 0; } 100% { opacity: 1; } }
+@-o-keyframes reveal-banner { 0% { opacity: 0; } 100% { opacity: 1; } }
+@-ms-keyframes reveal-banner { 0% { opacity: 0; } 100% { opacity: 1; } }
+@keyframes reveal-banner { 0% { opacity: 0; } 100% { opacity: 1; } }
 #section0{
 	background-image: url("img/future.jpg");
 	height: 100%;
@@ -165,9 +171,4 @@ p{
 		src:('coolvetica.ttf');
 }
 
-@-moz-keyframes reveal-banner { 0% { opacity: 0; } 100% { opacity: 1; } }
-@-webkit-keyframes reveal-banner { 0% { opacity: 0; } 100% { opacity: 1; } }
-@-o-keyframes reveal-banner { 0% { opacity: 0; } 100% { opacity: 1; } }
-@-ms-keyframes reveal-banner { 0% { opacity: 0; } 100% { opacity: 1; } }
-@keyframes reveal-banner { 0% { opacity: 0; } 100% { opacity: 1; } }
 	
