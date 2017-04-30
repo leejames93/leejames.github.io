@@ -107,7 +107,7 @@
             anchors:[],
             navigation: false,
             navigationPosition: 'right',
-            navigationColor: '#000',
+            navigationColor: '#000000',
             navigationTooltips: [],
             showActiveTooltip: false,
             slidesNavigation: false,
@@ -805,7 +805,7 @@
 
         var slides = $(SLIDES_WRAPPER_SEL, section);
 
-        if(options.controlArrowColor != '#fff'){
+        if(options.controlArrowColor != '#000'){
             //setCss(next, 'border-color', 'transparent transparent transparent '+options.controlArrowColor);
             //setCss(prev, 'border-color', 'transparent '+ options.controlArrowColor + ' transparent transparent');
         }
