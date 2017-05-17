@@ -16,7 +16,6 @@ body {
 
 
 
-
 /* Section 1
 		 * --------------------------------------- */
 
@@ -94,8 +93,21 @@ body {
 /* Section 2
 		 * --------------------------------------- */
 #section1{
+	background-image: url("img/resume1.jpg");
+	height: 100%;
+			text-shadow: 1px 1px 15px #000000;
+		color: #FFFFFF;
+	/* scrolling effect */
+	background-attachment: : fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+
+
+
+
 	font-size: 1.3vw;
-	background-color: rgb(240, 234, 214);
+	/*background-color: rgb(240, 234, 214);*/
 	font-family: "Helvetica";
 }
 	#section1 h3
@@ -160,8 +172,8 @@ body {
 
 		font-size: 10vw;
 		text-shadow: 4px 4px 12px #000000;
-		font-family: "Avenir";
 		color: #FFFFFF;
+		font-family: "Avenir";
 
 	}
 
