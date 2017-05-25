@@ -114,7 +114,7 @@ body {
 /* Section 2
 		 * --------------------------------------- */
 #section1 {
-	background-image: url("img/resume1.jpg");
+	background-image: url("../img/resume1.jpg");
 	height: 100%;
 		text-shadow: 1px 1px 15px #000000;
 		color: #FFFFFF;
