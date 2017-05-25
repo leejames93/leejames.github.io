@@ -64,7 +64,7 @@ body {
 
 		#section0 .inner h1 {
 			font-family: "Avenir";
-			font-size: 4em;
+			font-size: 5.5vw;
 			font-weight: 900;
 			text-transform: uppercase;
 		}
@@ -80,16 +80,16 @@ body {
 			/* End Delay */
 
 			font-family: "Avenir";
-			font-size: 2.1em;
+			font-size: 5.5vw;
 			font-weight: 800;
 			text-transform: uppercase;
 		}
 
 		#section0 .inner h2 {
 			/* Delay */
-			-moz-animation: fade-in 7s 0.5s ease-in-out;
-			-webkit-animation: fade-in 7s 0.5s ease-in-out;
-			animation: fade-in 7s .5s ease-in-out;
+			-moz-animation: fade-in 5s 0.5s ease-in-out;
+			-webkit-animation: fade-in 5s 0.5s ease-in-out;
+			animation: fade-in 7s 0.3s ease-in-out;
 			-moz-animation-fill-mode: forwards;
 			-webkit-animation-fill-mode: forwards;
 			animation-fill-mode: forwards;
@@ -98,7 +98,7 @@ body {
 			border-bottom: double 10px;
 			border-top: double 10px;
 			font-family: "Avenir";
-			font-size: 5em;
+			font-size: 11vw;
 			font-weight: 900;
 			text-transform: uppercase;
 		}
