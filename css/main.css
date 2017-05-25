@@ -1,3 +1,11 @@
+/* unvisited link */
+a {
+	font-family: "Avenir";
+    color: white;
+    text-decoration: none;
+}
+
+
 /* Parallax Scrolling */
 html {
   height: 100%;
