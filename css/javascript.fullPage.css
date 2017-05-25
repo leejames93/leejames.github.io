@@ -78,12 +78,12 @@ html.fp-enabled,
     left: 15px;
     width: 0;
     border-width: 20px 20px 20px 0;
-    border-color: transparent #000 transparent transparent;
+    border-color: transparent #FFF transparent transparent;
 }
 .fp-controlArrow.fp-next {
     right: 15px;
     border-width: 20px 0 20px 20px;
-    border-color: transparent transparent transparent #000;
+    border-color: transparent transparent transparent #FFF;
 }
 .fp-scrollable {
     overflow: scroll;
