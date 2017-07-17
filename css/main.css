@@ -1,198 +1,85 @@
+body, html {
+	height: 100%;
+	margin: 0;
+	font: 400 15px/1.8 "Avenir", sans-serif;
+	color: #777;
+}
+
 a {
 	font-family: "Avenir";
-    color: white;
-    text-decoration: none;
+	color: white;
+	text-decoration: none;
 }
 
-/* Parallax Scrolling */
-html {
-  height: 100%;
-  overflow: hidden;
-}
-
-body { 
-  margin:0;
-  padding:0;
-	perspective: 1px;
-	transform-style: preserve-3d;
-  height: 100%;
-  overflow-y: scroll;
-  overflow-x: hidden;
-}
-
-
-
-/* Section 1
-		 * --------------------------------------- */
-
-@-moz-keyframes fade-in { 0% { opacity: 0; } 100% { opacity: 1; } }
-@-webkit-keyframes fade-in { 0% { opacity: 0; } 100% { opacity: 1; } }
-@keyframes fade-in { 0% { opacity: 0; } 100% { opacity: 1; } }
-
-#section0 {
-	background-image: url("../img/bg.jpg");
-	height: 100%;
-	/* scrolling effect */
-	background-attachment: : fixed;
+.bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4 {
+	position: relative;
+	opacity: 0.80;
+	background-attachment: fixed;
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
-
 }
 
-	#section0 .inner {
-			/* Delay */
-			-moz-animation: fade-in 1s 0.25s ease-in-out;
-			-webkit-animation: fade-in 1s 0.25s ease-in-out;
-			animation: fade-in 1s 0.25s ease-in-out;
-			-moz-animation-fill-mode: forwards;
-			-webkit-animation-fill-mode: forwards;
-			animation-fill-mode: forwards;
-			/* End Delay */
-
-			background: rgba(0, 0, 0, 0.2);
-			color: white;
-			opacity: 0;
-			padding: 6em;
-			
-			/* centering */
-			position: absolute;
-  			top: 45%;
-  			left: 50%;
-  			transform: translate(-50%, -50%);
-	}
-
-		#section0 .inner h1 {
-			font-family: "Avenir";
-			font-size: 5.5vw;
-			font-weight: 900;
-			text-transform: uppercase;
-		}
-
-		#section0 .inner h3 {
-			/* Delay */
-			-moz-animation: fade-in 3s 0.25s ease-in-out;
-			-webkit-animation: fade-in 3s 0.25s ease-in-out;
-			animation: fade-in 3s 0.25s ease-in-out;
-			-moz-animation-fill-mode: forwards;
-			-webkit-animation-fill-mode: forwards;
-			animation-fill-mode: forwards;
-			/* End Delay */
-
-			font-family: "Avenir";
-			font-size: 5.5vw;
-			font-weight: 800;
-			text-transform: uppercase;
-		}
-
-		#section0 .inner h2 {
-			/* Delay */
-			-moz-animation: fade-in 5s 0.5s ease-in-out;
-			-webkit-animation: fade-in 5s 0.5s ease-in-out;
-			animation: fade-in 7s 0.3s ease-in-out;
-			-moz-animation-fill-mode: forwards;
-			-webkit-animation-fill-mode: forwards;
-			animation-fill-mode: forwards;
-			/* End Delay */
-
-			border-bottom: double 10px;
-			border-top: double 10px;
-			font-family: "Avenir";
-			font-size: 11vw;
-			font-weight: 900;
-			text-transform: uppercase;
-		}
-
-		#section0 .inner p {
-			letter-spacing: 0.1em;
-			font-family: "Avenir";
-			font-size: 1.5em;
-			margin:0;
-		}
-
-
-/* Section 2
-		 * --------------------------------------- */
-#section1 {
-	background-image: url("../img/black.jpg");
-	height: 100%;
-		text-shadow: 1px 1px 15px #000000;
-		color: #FFFFFF;
-	/* scrolling effect */
-	background-attachment: : fixed;
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
-	font-size: 1.3vw;
-	font-family: "Helvetica";
+.bgimg-1 {
+	background-image: url("../img/mountain.jpg");
+	min-height: 100%;
 }
 
-	#section1 h3 {
-		padding-left: 4.3em;
-		padding-right: 5em;
-		margin-top: 0em;
-	    margin-bottom: 0em;
-	}
-	
-	#section1 h4 {
-		padding-left: 5em;
-		padding-right: 5em;
-		margin-top: 0em;
-	    margin-bottom: 0em;
-	}
-	
-	#section1 p {
-		padding-left: 5em;
-		padding-right: 5em;
-		margin-top: 0em;
-	    margin-bottom: 0.2em;
-	}
+.bgimg-2 {
+	background-image: url("../img/riverbank.jpg");
+	min-height: 400px;
+}
 
-	#section1 hr { 
-	    display: block;
-	    margin-top: 0.01em;
-	    margin-bottom: 0.2em;
-	    margin-left: 5em;
-	    margin-right: 5em;
-	    border-style: double;
-	    border-width: 0.5px;
-	}
+.bgimg-3 {
+	background-image: url("../img/bwmountain.jpg");
+	min-height: 400px;
+}
 
-	#section1 ul {
-		padding-left: 6em;
-		margin-top: 0em;
-	    margin-bottom: 0em;
-	}
-
-	#section1 li {
-		padding-right: 5em;
-		margin-top: 0em;
-	    margin-bottom: 0em;
-	}
-
-/* Section 3
-		 * --------------------------------------- */
-#section2 {
-	background-image: url("../img/jp.jpg");
+.bgimg-4 {
+	background-image: url("../img/network2.jpg");
 	height: 100%;
-	/* scrolling effect */
-	background-attachment: : fixed;
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
+}
+
+
+.caption {
+	position: absolute;
+	left: 0;
+	top: 10%;
+	width: 100%;
 	text-align: center;
+	color: #000;
 }
 
-	#section2 h1 {
-		font-size: 10vw;
-		text-shadow: 4px 4px 12px #000000;
-		color: #FFFFFF;
-		font-family: "Avenir";
+.caption span.border {
+	display: block;
+	background-color: #111;
+	color: #fff;
+	padding: 18px;
+	font-size: 25px;
+	letter-spacing: 10px;
+}
+
+.caption span.borderh {
+	display: block;
+	opacity: 0.7;
+	background-color: #111;
+	color: #fff;
+	padding: 8px;
+	font-size: 25px;
+	letter-spacing: 10px;
+}
+	.caption span.borderh h1{
+		font-size: 40px;
 	}
 
-#section3 {
 
+h3 {
+	letter-spacing: 5px;
+	text-transform: uppercase;
+	font: 20px "Lato", sans-serif;
+	color: #111;
 }
+
 
 
 /* FLIP CARD */
@@ -215,14 +102,12 @@ body {
 .flipper {
 	transition: 0.6s;
 	transform-style: preserve-3d;
-
 	position: relative;
 }
 
 /* hide back of pane during swap */
 .front, .back {
 	backface-visibility: hidden;
-
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -239,11 +124,3 @@ body {
 .back {
 	transform: rotateY(180deg);
 }
-
-
-h1, h3, p{
-	font-family: "Helvetica";
-}
-
-
-	
