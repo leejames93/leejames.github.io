@@ -21,22 +21,24 @@ a {
 }
 
 .bgimg-1 {
-	background-image: url("../img/mountain.jpg");
+	opacity:.85;
+	background-image: url("../img/city1.jpg");
 	min-height: 100%;
 }
 
 .bgimg-2 {
-	background-image: url("../img/riverbank.jpg");
-	min-height: 400px;
+	background-image: url("../img/tech.jpg");
+	min-height: 100%;
 }
 
 .bgimg-3 {
-	background-image: url("../img/bwmountain.jpg");
-	min-height: 400px;
+	background-image: url("../img/art.jpg");
+	min-height: 100%;
 }
 
 .bgimg-4 {
-	background-image: url("../img/network2.jpg");
+	background-image: url("../img/city2.jpeg");
+	opacity:0.9;
 	height: 100%;
 }
 
@@ -44,7 +46,7 @@ a {
 .caption {
 	position: absolute;
 	left: 0;
-	top: 10%;
+	top: 25%;
 	width: 100%;
 	text-align: center;
 	color: #000;
@@ -57,11 +59,12 @@ a {
 	padding: 18px;
 	font-size: 25px;
 	letter-spacing: 10px;
+	opacity: 0.9;
 }
 
 .caption span.borderh {
 	display: block;
-	opacity: 0.7;
+	opacity: 0.9;
 	background-color: #111;
 	color: #fff;
 	padding: 8px;
