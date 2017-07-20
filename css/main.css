@@ -28,12 +28,13 @@ a {
 
 .bgimg-2 {
 	background-image: url("../img/tech.jpg");
-	min-height: 100%;
+	min-height: 70%;
 }
 
 .bgimg-3 {
 	background-image: url("../img/art.jpg");
-	min-height: 100%;
+	opacity:0.85;
+	min-height: 70%;
 }
 
 .bgimg-4 {
@@ -75,6 +76,37 @@ a {
 		font-size: 40px;
 	}
 
+.caption span.border2 {
+	display: block;
+	background-color:transparent;
+	font-size:25px;
+	color: #f7f7f7;
+	letter-spacing: 10px;
+	text-shadow: -2px 1px 3px black;
+}
+
+.caption span.border3{
+	font-size:20px;
+	color: white;
+	letter-spacing: 2px;
+	text-shadow: -1px 1px 2px black;
+}
+.introstrip {
+	color: #777;
+	background-color: white;
+	text-align: center;
+	padding: 50px 80px;
+	text-align: justify;
+}
+
+.strip {
+	position:relative;
+	color: #ddd;
+	background-color:#282E34;
+	text-align: center;
+	padding: 50px 80px;
+	text-align: justify;
+}
 
 h3 {
 	letter-spacing: 5px;
