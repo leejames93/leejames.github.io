@@ -1,0 +1,147 @@
+a {
+	font-family: "Avenir";
+    color: white;
+    text-decoration: none;
+}
+
+/* Parallax Scrolling */
+html {
+  height: 100%;
+  overflow: hidden;
+}
+
+body { 
+  margin:0;
+  padding:0;
+	perspective: 1px;
+	transform-style: preserve-3d;
+  height: 100%;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+.box0{
+	padding: 11em 12vw 9em 12vw ;
+}
+
+.box01{
+	padding: 0em 10vw 0em 10vw;
+}
+
+.box1{
+	text-align: center;
+	padding: 10em 10vw 0em 5vw ;
+}
+.box11{
+	text-align: left;
+		padding: 0em 10vw 0em 5vw ;
+	
+}
+
+
+/* Section 0 --------------------------------------- */
+#section0 {
+	color:white;
+	background-image: url("../img/b2.jpg");
+	height: 100%;
+	/* scrolling effect */
+	background-attachment: : fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	text-align: center;
+}
+
+	#section0 h3 {
+
+	    margin-bottom: 0em;
+		text-decoration: underline;
+	    text-decoration-style: double;
+	}
+	
+	#section0 h4 {
+		padding-left: 5em;
+		padding-right: 5em;
+		margin-top: 0em;
+	    margin-bottom: 0em;
+	}
+	
+	#section0 p {
+		font-size:16px;
+		padding-left: 5em;
+		padding-right: 5em;
+		margin-top: 0em;
+	    margin-bottom: 0.2em;
+
+	}
+
+	#section0 ul {
+		padding-left: 6em;
+		margin-top: 0em;
+	    margin-bottom: 0em;
+	}
+
+	#section0 li {
+		padding-right: 5em;
+		margin-top: 0em;
+	    margin-bottom: 0em;
+	}
+
+/* Section 1 --------------------------------------- */
+#section1 {
+	background-image: url("../img/b1.jpg");
+	height: 100%;
+	width:100%;
+	color: #FFFFFF;
+	background-attachment: : fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	font-family: "Helvetica";
+}
+
+	#section1 h3 {
+		text-decoration: underline;
+	    text-decoration-style: double;
+		padding-left:3em;
+		padding-right: 5em;
+	    margin-bottom: 0em;
+	}
+	
+	#section1 h4 {
+		padding-left: 5em;
+		padding-right: 5em;
+		margin-top: 0em;
+	    margin-bottom: 0em;
+	}
+	
+	#section1 p {
+		padding-left: 5em;
+		padding-right: 5em;
+		margin-top: 0em;
+	    margin-bottom: 0.2em;
+	}
+
+	#section1 hr { 
+	    display: block;
+	    margin: 0.01em 5em 0.2em 5em;
+	    border-style: double;
+	    border-width: 0.5px;
+	}
+
+	#section1 ul {
+		padding-left: 6em;
+		margin-top: 0em;
+	    margin-bottom: 0em;
+	}
+
+	#section1 li {
+		padding-right: 5em;
+		margin-top: 0em;
+	    margin-bottom: 0em;
+	}
+
+
+
+
+	
