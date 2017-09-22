@@ -1,0 +1,209 @@
+@import url("https://fonts.googleapis.com/css?family=Raleway:300,700");
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: white;
+  color: white;
+  font-family: "Raleway", sans-serif;
+  font-size: 2.5rem;
+  line-height: 1.45;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.sidebar {
+  background: #4f4f4f;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 5%;
+          flex: 1 1 5%;
+  min-width: 300px;
+  padding: 1em;
+}
+
+.logo {
+  text-transform: uppercase;
+  margin-bottom: 1em;
+}
+@media (min-width: 1500px) {
+  .logo {
+    margin-bottom: 5em;
+  }
+}
+.logo span {
+  font-weight: 700;
+}
+
+.nav-item {
+  color: #737373;
+  text-decoration: none;
+  font-size: 1.7rem;
+  display: inline-block;
+  margin-right: 2em;
+}
+@media (min-width: 1500px) {
+  .nav-item {
+    display: block;
+    margin: 7vh 0;
+  }
+}
+.nav-item.active {
+  color: #c4c4c4;
+}
+
+.main-content {
+  padding: 5%;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 80%;
+          flex: 1 1 80%;
+  min-height: 100vh;
+}
+
+.portfolio {
+  display: -ms-grid;
+  display: grid;
+  height: 100%;
+  -ms-grid-rows: (1fr)[8];
+      grid-template-rows: repeat(8, 1fr);
+  -ms-grid-columns: (1fr)[5];
+      grid-template-columns: repeat(5, 1fr);
+  grid-gap: 20px;
+}
+
+.portfolio-item {
+  background: #2B3952;
+  color: white;
+  font-weight: 700;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 1.5em;
+  background-size: cover;
+  background-position: top left;
+  -webkit-transition: all ease-in-out 300ms;
+  transition: all ease-in-out 300ms;
+  position: relative;
+  z-index: 10;
+}
+
+.portfolio-item.one {
+    background-image: url(../img/wave.jpg);
+  -ms-grid-row: span 4;
+      grid-row: span 4;
+  -ms-grid-column: span 2;
+      grid-column: span 2;
+}
+
+.portfolio-item.two {
+    background-image: url(../img/jcole.jpg);
+      background-position: right;
+    -ms-grid-row: span 6;
+      grid-row: span 6;
+  -ms-grid-column: span 3;
+      grid-column: span 3;
+}
+
+.portfolio-item.three {
+  background-image: url(../img/blog.png);
+  background-position: center;
+  -ms-grid-row: span 5;
+      grid-row: span 5;
+  -ms-grid-column: span 2;
+      grid-column: span 2;
+}
+
+.portfolio-item.four {
+  background-image: url(../img/lifestyle.jpg);
+    background-position: bottom;
+
+  -ms-grid-row: span 3;
+      grid-row: span 3;
+  -ms-grid-column: span 3;
+      grid-column: span 3;
+}
+.portfolio-item:hover {
+  color: white;
+  text-shadow: 0 0 5px rgba(0, 0, 0, 0.85);
+}
+
+.one::before{
+  content: '';
+  display: block;
+  background: #2B3952;
+  opacity: 0.8;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  -webkit-transition: all ease-in-out 300ms;
+  transition: all ease-in-out 300ms;
+  z-index: -1;
+}
+.one:hover::before {
+  opacity: 0.4;
+}
+
+.two::before {
+  content: '';
+  display: block;
+  background: #353535;
+  opacity: 0.8;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  -webkit-transition: all ease-in-out 300ms;
+  transition: all ease-in-out 300ms;
+  z-index: -1;
+}
+.two:hover::before {
+  opacity: 0.2;
+}
+
+.three::before {
+  content: '';
+  display: block;
+  background: #FFA200;
+  opacity: 0.8;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  -webkit-transition: all ease-in-out 300ms;
+  transition: all ease-in-out 300ms;
+  z-index: -1;
+}
+.three:hover::before {
+  opacity: 0.1;
+}
+
+.four::before {
+  content: '';
+  display: block;
+  background: #8A95AC;
+  opacity: 0.8;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  -webkit-transition: all ease-in-out 300ms;
+  transition: all ease-in-out 300ms;
+  z-index: -1;
+}
+.four:hover::before {
+  opacity: 0.1;
+}

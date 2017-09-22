@@ -20,6 +20,50 @@ body {
   overflow-x: hidden;
 }
 
+
+
+
+.nav{
+	overflow: hidden;
+	top:0;
+	opacity:0.70;
+	width:100%;
+}
+.nav a {
+	font-family: "Avenir";
+	color: white;
+	text-decoration: none;
+}
+
+.nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: black;
+}
+
+.nav li {
+    float: left;
+}
+
+.nav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 10px 20px;
+    text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+.nav li a:hover {
+    background-color: #111;
+}
+
+
+
+
+
 .box0{
 	padding: 11em 12vw 9em 12vw ;
 }
@@ -34,8 +78,17 @@ body {
 }
 .box11{
 	text-align: left;
-		padding: 0em 10vw 0em 5vw ;
+	padding: 0em 10vw 0em 5vw ;
 	
+}
+
+
+.box2 {
+	position: center;
+	vertical-align: middle;
+	height:300px;
+	width:80%;
+	overflow:auto;
 }
 
 
