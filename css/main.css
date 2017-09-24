@@ -1,35 +1,68 @@
+@import url("https://fonts.googleapis.com/css?family=Raleway:300,700");
+* {
+  box-sizing: border-box;
+}
 body, html {
 	height: 100%;
 	margin: 0;
 	font: 400 15px/1.8 "Avenir", sans-serif;
-	color: #777;
+	color: white;
 }
 
-.nav{
-	overflow: hidden;
-	top:0;
-	opacity:0.70;
-	width:100%;
+
+
+.sidebar {
+  font-family: "Raleway", sans-serif;
+  font-size: 1em;
+  background: #4f4f4f;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 5%;
+          flex: 1 1 5%;
+  min-width: 300px;
+  padding: 1em;
 }
-.nav a {
-	font-family: "Avenir";
+
+.logo {
+  text-transform: uppercase;
+  margin-bottom: 1em;
+}
+@media (min-width: 1500px) {
+  .logo {
+    margin-bottom: 5em;
+  }
+}
+.logo span {
+  font-weight: 700;
+}
+
+.nav-item {
+  color: #737373;
+  text-decoration: none;
+  font-size: 1rem;
+  display: inline-block;
+  margin-right: 2em;
+}
+@media (min-width: 1500px) {
+  .nav-item {
+    display: block;
+    margin: 7vh 0;
+  }
+}
+.nav-item.active {
+  color: #c4c4c4;
+}
+
+.nav-item a {
 	color: white;
 	text-decoration: none;
 }
 
-.nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: black;
-}
 
-.nav li {
+.nav-item li {
     float: left;
 }
 
-.nav li a {
+.nav-item li a {
     display: block;
     color: white;
     text-align: center;
@@ -38,8 +71,8 @@ body, html {
 }
 
 /* Change the link color to #111 (black) on hover */
-.nav li a:hover {
-    background-color: #111;
+.nav-item a:hover {
+    background-color: white;
 }
 
 .bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4 {
@@ -63,7 +96,7 @@ body, html {
 }
 
 .bgimg-3 {
-	background-image: url("../img/art2.jpg");
+	background-image: url("../img/abstract.jpg");
 	min-height: 50%;
 }
 
