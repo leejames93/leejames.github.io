@@ -1,53 +1,70 @@
-a {
-	font-family: "Avenir";
-    color: white;
-    text-decoration: none;
+@import url("https://fonts.googleapis.com/css?family=Raleway:300,700");
+* {
+  box-sizing: border-box;
 }
-
-/* Parallax Scrolling */
-html {
-  height: 100%;
-  overflow: hidden;
-}
-
-body { 
-  margin:0;
-  padding:0;
-	perspective: 1px;
-	transform-style: preserve-3d;
-  height: 100%;
-  overflow-y: scroll;
-  overflow-x: hidden;
+body, html {
+	height: 100%;
+	margin: 0;
+	font: 400 15px/1.8 "Avenir", sans-serif;
+	color: white;
 }
 
 
 
+.sidebar {
 
-.nav{
-	overflow: hidden;
-	top:0;
-	opacity:0.70;
-	width:100%;
+	opacity: 0.95;
+ 	font-family: "Raleway", sans-serif;
+  	font-size: 1em;
+  	background: #111;
+  	-webkit-box-flex: 1;
+    	-ms-flex: 1 1 5%;
+    	flex: 1 1 5%;
+	min-width: 300px;
+	padding: 1em;
 }
-.nav a {
-	font-family: "Avenir";
+
+.logo {
+	text-transform: uppercase;
+	margin-bottom: 1em;
+}
+@media (min-width: 1500px) {
+	.logo {
+		margin-bottom: 5em;
+	}
+}
+.logo span {
+	font-weight: 700;
+}
+
+.nav-item {
+	color: #737373;
+	text-decoration: none;
+	font-size: 1rem;
+	display: inline-block;
+	margin-right: 2em;
+}
+@media (min-width: 1500px) {
+	.nav-item {
+		display: block;
+		margin: 7vh 0;
+	}
+}
+.nav-item.active {
+	color: #c4c4c4;
+}
+
+.nav-item a {
 	color: white;
 	text-decoration: none;
 }
 
-.nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: black;
-}
 
-.nav li {
+.nav-item li {
     float: left;
 }
 
-.nav li a {
+.nav-item li a {
     display: block;
     color: white;
     text-align: center;
@@ -56,145 +73,236 @@ body {
 }
 
 /* Change the link color to #111 (black) on hover */
-.nav li a:hover {
-    background-color: #111;
+.nav-item a:hover {
+    background-color: white;
 }
 
-
-
-
-
-.box0{
-	padding: 11em 12vw 9em 12vw ;
-}
-
-.box01{
-	padding: 0em 10vw 0em 10vw;
-}
-
-.box1{
-	text-align: center;
-	padding: 10em 10vw 0em 5vw ;
-}
-.box11{
-	text-align: left;
-	padding: 0em 10vw 0em 5vw ;
-	
-}
-
-
-.box2 {
-	position: center;
-	vertical-align: middle;
-	height:300px;
-	width:80%;
-	overflow:auto;
-}
-
-
-/* Section 0 --------------------------------------- */
-#section0 {
-	color:white;
-	background-image: url("../img/b2.jpg");
-	height: 100%;
-	/* scrolling effect */
-	background-attachment: : fixed;
+.bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4 {
+	position: relative;
+	opacity: 0.80;
+	background-attachment: fixed;
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
-	text-align: center;
 }
 
-	#section0 h3 {
+.bgimg-1 {
+	opacity:.85;
+	background-image: url("../img/first.jpg");
+	min-height: 100%;
+}
 
-	    margin-bottom: 0em;
-		text-decoration: underline;
-	    text-decoration-style: double;
-	}
-	
-	#section0 h4 {
-		padding-left: 5em;
-		padding-right: 5em;
-		margin-top: 0em;
-	    margin-bottom: 0em;
-	}
-	
-	#section0 p {
-		font-size:16px;
-		padding-left: 5em;
-		padding-right: 5em;
-		margin-top: 0em;
-	    margin-bottom: 0.2em;
+.bgimg-2 {
+	background: white;
+	min-height: 100%;
+}
 
-	}
+.bgimg-3 {
+	background-image: url("../img/walls.jpeg");
+	min-height: 20%;
+}
 
-	#section0 ul {
-		padding-left: 6em;
-		margin-top: 0em;
-	    margin-bottom: 0em;
-	}
-
-	#section0 li {
-		padding-right: 5em;
-		margin-top: 0em;
-	    margin-bottom: 0em;
-	}
-
-/* Section 1 --------------------------------------- */
-#section1 {
-	background-image: url("../img/b1.jpg");
+.bgimg-4 {
+	background-image: url("../img/city2.jpeg");
+	opacity:0.9;
 	height: 100%;
-	width:100%;
-	color: #FFFFFF;
-	background-attachment: : fixed;
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
-	font-family: "Helvetica";
 }
 
-	#section1 h3 {
-		text-decoration: underline;
-	    text-decoration-style: double;
-		padding-left:3em;
-		padding-right: 5em;
-	    margin-bottom: 0em;
+.first {
+	position: absolute;
+	top: 25%;
+	width: 100%;
+	text-align: center;
+	color: #000;
+}
+
+.contents {
+	display: block;
+	margin: auto;
+	max-width: 35vw;
+	opacity: 0.9;
+	color: #FFF;
+	background-color: #111;
+	text-align: center;
+	padding: 20px;
+}
+	.contents h1 {
+	 	font-family: "Raleway", sans-serif;
+		font-size: 5vw;
 	}
-	
-	#section1 h4 {
-		padding-left: 5em;
-		padding-right: 5em;
-		margin-top: 0em;
-	    margin-bottom: 0em;
+	.contents h2 {
+		font-size: 1.5vw;
+		padding-bottom: 10px;
 	}
-	
-	#section1 p {
-		padding-left: 5em;
-		padding-right: 5em;
-		margin-top: 0em;
-	    margin-bottom: 0.2em;
+	.contents h3 {
+		font-size: 1.5vw;
+	}
+	.contents a {
+		color:white;
 	}
 
-	#section1 hr { 
+	.line {
 	    display: block;
-	    margin: 0.01em 5em 0.2em 5em;
-	    border-style: double;
-	    border-width: 0.5px;
+	    margin:auto;
+	    text-align:center;
+	    width: 27vw;
+	    height: 2px;
+	    border: 0;
+	    border-top: 2.5px solid #FFF;
+	    margin: 1px 0;
+	    padding-top: 3.5px;
 	}
 
-	#section1 ul {
-		padding-left: 6em;
-		margin-top: 0em;
-	    margin-bottom: 0em;
+.objective {
+	color: #FFF;
+	background-color: #111;
+	opacity: .85;
+	text-align: center;
+	padding: 60px 80px;
+	text-align: justify;
+}
+	.objective h1{
+		padding:0px 120px;
+		letter-spacing: 8px;
+		font: 25px "Lato", sans-serif;
+		color: #FFF;
+	}
+	.objective p{
+		padding:0px 120px 0px 120px;
 	}
 
-	#section1 li {
-		padding-right: 5em;
-		margin-top: 0em;
-	    margin-bottom: 0em;
+
+.title{
+	padding:50px 80px;
+}
+	.title h1 {
+		letter-spacing: 8px;
+		font: 25px "Lato", sans-serif;
+		color: #FFF;
+	}
+	.title h2 {
+		display: block;
+		max-width: 80%;
+		margin: auto;
+		padding: 30px 0px 20px 0px;
+		letter-spacing: 8px;
+		font: 25px "Lato", sans-serif;
+		color: #FFF;
 	}
 
+.education {
+	display: block;
+	margin: auto;
+	max-width: 80%;
+	color: #FFF;
+	background-image: url("../img/laptop.jpg");
+	text-align: center;
+	padding: 50px 150px 60px;
+	text-align: justify;
+
+	position: relative;
+	opacity: 1;
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.work {
+	display: block;
+	margin: auto;
+	max-width: 80%;
+	color: #777;
+	background-color: white;
+	text-align: justify;
+	padding: 50px 70px;
+
+}
+
+.leadership {
+	display: block;
+	margin: auto;
+	max-width: 80%;
+	color: #FFF;
+	background-image: url("../img/leader.png");
+	text-align: center;
+	padding: 50px 100px 60px;
+	text-align: justify;
+
+	position: relative;
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
 
 
 
-	
+.caption {
+	position: absolute;
+	left: 0;
+	top: 10%;
+	width: 100%;
+	color: #000;
+}
+.caption span.border {
+	display: block;
+	background-color: #111;
+	color: #fff;
+	padding: 18px;
+	font-size: 25px;
+	letter-spacing: 0px;
+	opacity: 0.9;
+}
+.caption p{
+	font-size:20px;
+	color: white;
+	letter-spacing: 3px;
+	text-shadow: -1px 1px 2px black;
+	padding: 10px 50px 50px 50px;
+}
+
+
+
+/* FLIP CARD */
+/* entire container, keeps perspective */
+.flip-container {
+	display: inline-block;
+	perspective: 1000px;
+}
+	/* flip the pane when hovered */
+	.flip-container:hover .flipper, .flip-container.hover .flipper {
+		transform: rotateY(180deg);
+	}
+
+.flip-container, .front, .back {
+	width: 175px;
+	height: 175px;
+}
+
+/* flip speed goes here */
+.flipper {
+	transition: 0.6s;
+	transform-style: preserve-3d;
+	position: relative;
+}
+
+/* hide back of pane during swap */
+.front, .back {
+	backface-visibility: hidden;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+/* front pane, placed above back */
+.front {
+	z-index: 2;
+	/* for firefox 31 */
+	transform: rotateY(0deg);
+}
+
+/* back, initially hidden pane */
+.back {
+	transform: rotateY(180deg);
+}
