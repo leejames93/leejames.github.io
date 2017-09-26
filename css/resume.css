@@ -108,6 +108,11 @@ body, html {
 	height: 100%;
 }
 
+.bgimg-5 {
+	background: white;
+	min-height: 20%;
+}
+
 .first {
 	position: absolute;
 	top: 25%;
