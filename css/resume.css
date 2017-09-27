@@ -77,7 +77,7 @@ body, html {
     background-color: white;
 }
 
-.bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4 {
+.bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4, .bgimg-5 {
 	position: relative;
 	opacity: 0.80;
 	background-attachment: fixed;
@@ -94,24 +94,23 @@ body, html {
 
 .bgimg-2 {
 	background: white;
-	min-height: 100%;
 }
 
 .bgimg-3 {
 	background-image: url("../img/walls.jpeg");
-	min-height: 20%;
 }
 
 .bgimg-4 {
-	background-image: url("../img/city2.jpeg");
-	opacity:0.9;
-	height: 100%;
+	background: white;
 }
 
 .bgimg-5 {
-	background: white;
-	min-height: 20%;
+	background-image: url("../img/social.png");
+	opacity:0.9;
+	height: 50%;
 }
+
+
 
 .first {
 	position: absolute;
@@ -195,6 +194,16 @@ body, html {
 		color: #FFF;
 	}
 
+.work {
+	display: block;
+	margin: auto;
+	max-width: 85%;
+	color: #777;
+	background-color: white;
+	text-align: justify;
+	padding: 50px 70px;
+}
+
 .education {
 	display: block;
 	margin: auto;
@@ -211,17 +220,6 @@ body, html {
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
-}
-
-.work {
-	display: block;
-	margin: auto;
-	max-width: 80%;
-	color: #777;
-	background-color: white;
-	text-align: justify;
-	padding: 50px 70px;
-
 }
 
 .leadership {
@@ -243,56 +241,55 @@ body, html {
 
 
 
-.caption {
+.social {
 	position: absolute;
 	left: 0;
 	top: 10%;
 	width: 100%;
 	color: #000;
 }
-.caption span.border {
-	display: block;
-	background-color: #111;
-	color: #fff;
-	padding: 18px;
-	font-size: 25px;
-	letter-spacing: 0px;
-	opacity: 0.9;
-}
-.caption p{
-	font-size:20px;
-	color: white;
-	letter-spacing: 3px;
-	text-shadow: -1px 1px 2px black;
-	padding: 10px 50px 50px 50px;
-}
+	.social span.border {
+		display: block;
+		background-color: #111;
+		color: #fff;
+		padding: 18px;
+		font-size: 25px;
+		letter-spacing: 0px;
+		opacity: 0.9;
+	}
+	.social h1{
+		font-size:40px;
+		color: white;
+		letter-spacing: 3px;
+		text-shadow: -1px 1px 2px black;
+		padding: 10px 0px 10px;
+	}
+	.social h2{
+		color:white;
+		text-shadow: -1px 1px 2px black;
+	}
 
 
 
-/* FLIP CARD */
-/* entire container, keeps perspective */
 .flip-container {
 	display: inline-block;
 	perspective: 1000px;
 }
-	/* flip the pane when hovered */
 	.flip-container:hover .flipper, .flip-container.hover .flipper {
 		transform: rotateY(180deg);
 	}
 
 .flip-container, .front, .back {
-	width: 175px;
-	height: 175px;
+	width: 100px;
+	height: 100px;
 }
 
-/* flip speed goes here */
 .flipper {
 	transition: 0.6s;
 	transform-style: preserve-3d;
 	position: relative;
 }
 
-/* hide back of pane during swap */
 .front, .back {
 	backface-visibility: hidden;
 	position: absolute;
@@ -300,14 +297,11 @@ body, html {
 	left: 0;
 }
 
-/* front pane, placed above back */
 .front {
 	z-index: 2;
-	/* for firefox 31 */
 	transform: rotateY(0deg);
 }
 
-/* back, initially hidden pane */
 .back {
 	transform: rotateY(180deg);
 }

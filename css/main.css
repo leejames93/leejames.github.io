@@ -12,44 +12,46 @@ body, html {
 
 
 .sidebar {
-  font-family: "Raleway", sans-serif;
-  font-size: 1em;
-  background: #4f4f4f;
-  -webkit-box-flex: 1;
-      -ms-flex: 1 1 5%;
-          flex: 1 1 5%;
-  min-width: 300px;
-  padding: 1em;
+	opacity: 0.95;
+  	font-family: "Raleway", sans-serif;
+ 	font-size: 1em;
+	background: #111;
+	-webkit-box-flex: 1;
+    -ms-flex: 1 1 5%;
+        flex: 1 1 5%;
+	min-width: 300px;
+	padding: 1em;
 }
 
 .logo {
-  text-transform: uppercase;
-  margin-bottom: 1em;
+	text-transform: uppercase;
+	margin-bottom: 1em;
 }
 @media (min-width: 1500px) {
-  .logo {
-    margin-bottom: 5em;
-  }
+	.logo {
+	margin-bottom: 5em;
+  	}
 }
+
 .logo span {
-  font-weight: 700;
+	font-weight: 700;
 }
 
 .nav-item {
-  color: #737373;
-  text-decoration: none;
-  font-size: 1rem;
-  display: inline-block;
-  margin-right: 2em;
+	color: #737373;
+	text-decoration: none;
+	font-size: 1rem;
+	display: inline-block;
+	margin-right: 2em;
 }
 @media (min-width: 1500px) {
-  .nav-item {
-    display: block;
-    margin: 7vh 0;
-  }
+	.nav-item {
+    	display: block;
+    	margin: 7vh 0;
+	}
 }
 .nav-item.active {
-  color: #c4c4c4;
+	color: #c4c4c4;
 }
 
 .nav-item a {
