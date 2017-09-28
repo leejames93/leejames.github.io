@@ -244,7 +244,6 @@ video#bgvid {
   text-align: center;
   background: transparent;
   width: 70%;
-  margin: 0 auto;
   padding-bottom: 3%;
   color:white;
   display: block;
@@ -254,8 +253,8 @@ video#bgvid {
     red 50%,
     red);
   background-position: 100% 0;
-    background-size: 200% 100%;
-    transition: all .25s ease-in;
+    background-size: 250% 100%;
+    transition: all .3s ease-in;
     
 }
 .block:hover{

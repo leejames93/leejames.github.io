@@ -72,14 +72,16 @@ body, html {
 }
 
 .bgimg-2 {
-	background-image: url("../img/tech2.jpg");
-	min-height: 80%;
+	opacity:.9;
+	background-image: url("../img/polygon-blue1.png");
+	min-height: 60%;
+
 }
 
 .bgimg-3 {
-	opacity:.9;
-	background-image: url("../img/polygon-blue.png");
-	min-height: 80%;
+	background-image: url("../img/tech3.png");
+	min-height: 60%;
+	opacity: 0.95;
 }
 
 .caption {
@@ -115,6 +117,7 @@ body, html {
 	}
 
 .caption span.border2 {
+	font-family: "Raleway", sans-serif;
 	display: block;
 	background-color:transparent;
 	font-size:25px;
@@ -124,9 +127,10 @@ body, html {
 }
 
 .caption p{
+	font-family: "Raleway", sans-serif;
 	font-size:20px;
 	color: white;
-	letter-spacing: 3px;
+	letter-spacing: 0px;
 	text-shadow: -1px 1px 2px black;
 	padding: 10px 50px 50px 50px;
 }
@@ -150,8 +154,9 @@ body, html {
 h3 {
 	letter-spacing: 5px;
 	text-transform: uppercase;
-	font: 20px "Lato", sans-serif;
+	font-size:20px;
 	color: #111;
+  	font-family: "Raleway", sans-serif;
 }
 
 /* FLIP CARD */
