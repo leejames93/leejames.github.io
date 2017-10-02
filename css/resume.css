@@ -63,6 +63,10 @@ body, html {
     background-color: white;
 }
 
+
+
+
+
 .bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4, .bgimg-5 {
 	position: relative;
 	opacity: 0.80;
@@ -147,18 +151,13 @@ body, html {
 	color: #FFF;
 	background-color: #111;
 	opacity: .85;
-	text-align: center;
-	padding: 60px 80px;
+	padding: 60px 120px;
 	text-align: justify;
 }
 	.objective h1{
-		padding:0px 120px;
 		letter-spacing: 8px;
 		font: 25px "Lato", sans-serif;
 		color: #FFF;
-	}
-	.objective p{
-		padding:0px 120px 0px 120px;
 	}
 
 
