@@ -6,31 +6,25 @@ body, html {
 	height: 100%;
 	margin: 0;
 	font: 400 15px/1.8 "Avenir", sans-serif;
-	color: white;
+	  background: #282E34;
+  color: #c4c4c4;
+  line-height: 1.45;
 }
 
+body {
 
+}
 
 .sidebar {
-	opacity: 0.95;
-  	font-family: "Raleway", sans-serif;
- 	font-size: 1em;
-	background: #111;
-	-webkit-box-flex: 1;
-    -ms-flex: 1 1 5%;
-        flex: 1 1 5%;
-	min-width: 300px;
+	opacity: 0.9;
+  	background: #000;
+  	min-width: 300px;
 	padding: 1em;
 }
 
 .logo {
 	text-transform: uppercase;
-	margin-bottom: 1em;
-}
-@media (min-width: 1500px) {
-	.logo {
-	margin-bottom: 5em;
-  	}
+	margin-bottom: 2em;
 }
 
 .logo span {
@@ -38,21 +32,26 @@ body, html {
 }
 
 .nav-item {
-	color: #737373;
-	text-decoration: none;
-	font-size: 1rem;
-	display: inline-block;
+	font-family: "Raleway", sans-serif;
+  	color: #737373;
+  	text-decoration: none;
+	font-size: 1.1rem;
+	/*display: inline-block;*/
 	margin-right: 2em;
 }
-@media (min-width: 1500px) {
-	.nav-item {
-    	display: block;
-    	margin: 7vh 0;
-	}
-}
+
 .nav-item.active {
 	color: #c4c4c4;
 }
+
+.main-content {
+	-webkit-box-flex: 1;
+	-ms-flex: 1 1 80%;
+	flex: 1 1 80%;
+  	min-height: 100vh;
+}
+
+
 
 
 
